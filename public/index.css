@@ -1,0 +1,143 @@
+body {
+    background: #4b79a1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4b79a1, #283e51); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4b79a1, #283e51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 45px;
+    color: white;
+}
+
+.bubbleWrapper {
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+}
+
+.userBubble {
+    background-color: #0080ff;
+    color: white;
+    min-width: 40px;
+	max-width: 700px;
+	padding: 14px 18px;
+    margin: 6px 8px;
+    border-radius: 16px 16px 0 16px;
+    align-self: flex-end;
+}
+
+.botBubble { 
+    background-color: #ececec;
+    min-width: 40px;
+	max-width: 1000px;
+	padding: 14px 18px;
+    margin: 6px 8px;
+    border-radius: 16px 16px 16px 0;
+    align-self: flex-start;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.inlineContainer {
+    display: inline-flex;
+}
+
+.inlineContainer.own {
+    flex-direction: row-reverse;
+}
+
+.inlineIcon {
+    width:36px;
+    object-fit: contain;
+}
+
+#chatWindow {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 22px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 3.75px 3px rgba(0, 0, 0, 0.06),
+    0 6.69px 5.37px rgba(0, 0, 0, 0.072),
+    0 12.54px 10.02px rgba(0, 0, 0, 0.086),
+    0 30px 24px rgba(0, 0, 0, 0.12)
+    ;
+    width: 84%;
+    height: 550px;
+    margin-left:8%;
+    margin-bottom:2%;
+    overflow: scroll;
+}
+
+.button {
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 14px;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: rgba(0,0,0,0); /* transparent */
+}
+
+.button:hover {
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #aaaaaa;
+    opacity: 1; /* Firefox */
+}
+
+.textInput {
+    color: white;
+    font-family:'Roboto',sans-serif;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0); /* transparent */
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.4em;
+    box-sizing: border-box;
+}
+
+.inlineLogo {
+    width: 300px;
+    object-fit: contain;
+}
+
+#switch {
+    width: 120px;
+    position: relative;
+    left: 2%;
+}
+
+#clear {
+    position: relative;
+    left: 35%;
+}
+
+#ack1 {
+    text-align: left;
+    color: #aaaaaa;
+    margin-left:1%;
+}
+
+#ack2 {
+    text-align: left;
+    color: #aaaaaa;
+    margin-left:1%;
+}
